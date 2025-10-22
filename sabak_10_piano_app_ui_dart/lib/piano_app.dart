@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:sabak_10_piano_app_ui_dart/widgets/black_piano_key.dart';
 import 'package:sabak_10_piano_app_ui_dart/widgets/white_piano_key.dart';
@@ -7,6 +8,7 @@ class PianoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AudioPlayer nota = AudioPlayer();
     return Scaffold(
       appBar: myAppBar(),
       body: Column(
@@ -16,30 +18,31 @@ class PianoApp extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
-                  WhitePianoKey(),
+                  WhitePianoKey(
+                    text: 'f1',
+                    onPressed: () => nota.play(AssetSource('nota/do.wav')),
+                  ),
+                  WhitePianoKey(text: 'f2'),
+                  WhitePianoKey(text: 'f3'),
+                  WhitePianoKey(text: 'f4'),
+                  WhitePianoKey(text: 'f5'),
+                  WhitePianoKey(text: 'f6'),
+                  WhitePianoKey(text: 'f7'),
+                  WhitePianoKey(text: 'f1'),
+                  WhitePianoKey(text: 'f2'),
+                  WhitePianoKey(text: 'f3'),
+                  WhitePianoKey(text: 'f4'),
                 ],
               ),
-              BlackPianoKey(left: 35),
-              BlackPianoKey(left: 90),
-              BlackPianoKey(left: 200),
-              BlackPianoKey(left: 255),
-              BlackPianoKey(left: 310),
-              BlackPianoKey(left: 420),
-              BlackPianoKey(right: 55),
-              BlackPianoKey(right: 110),
-              BlackPianoKey(right: 220),
+              BlackPianoKey(left: 35, text: 'f1'),
+              BlackPianoKey(left: 90, text: 'f2'),
+              BlackPianoKey(left: 200, text: 'f3'),
+              BlackPianoKey(left: 255, text: 'f4'),
+              BlackPianoKey(left: 310, text: 'f5'),
+              BlackPianoKey(left: 420, text: 'f6'),
+              BlackPianoKey(right: 55, text: 'f7'),
+              BlackPianoKey(right: 110, text: 'f1'),
+              BlackPianoKey(right: 220, text: 'f2'),
             ],
           ),
         ],

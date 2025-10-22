@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BlackPianoKey extends StatelessWidget {
-  const BlackPianoKey({super.key, this.left, this.right});
+  const BlackPianoKey({super.key, this.left, this.right, required this.text});
   final double? left;
   final double? right;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -25,7 +26,7 @@ class BlackPianoKey extends StatelessWidget {
           children: [
             Center(
               child: Text(
-                'f1',
+                text,
                 style: TextStyle(
                   color: Color(0xffFFFFFF),
                   fontSize: 19,
