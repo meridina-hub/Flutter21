@@ -21,6 +21,7 @@ class BlackPianoKey extends StatelessWidget {
             bottomRight: Radius.circular(5),
           ),
         ),
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [

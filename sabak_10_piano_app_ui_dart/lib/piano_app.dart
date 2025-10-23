@@ -22,16 +22,54 @@ class PianoApp extends StatelessWidget {
                     text: 'f1',
                     onPressed: () => nota.play(AssetSource('nota/do.wav')),
                   ),
-                  WhitePianoKey(text: 'f2'),
-                  WhitePianoKey(text: 'f3'),
-                  WhitePianoKey(text: 'f4'),
-                  WhitePianoKey(text: 'f5'),
-                  WhitePianoKey(text: 'f6'),
-                  WhitePianoKey(text: 'f7'),
-                  WhitePianoKey(text: 'f1'),
-                  WhitePianoKey(text: 'f2'),
-                  WhitePianoKey(text: 'f3'),
-                  WhitePianoKey(text: 'f4'),
+                  WhitePianoKey(
+                    text: 'f2',
+                    onPressed: () => nota.play(AssetSource('nota/re.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f3',
+                    onPressed: () => nota.play(AssetSource('nota/mi.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f4',
+                    onPressed: () => nota.play(AssetSource('nota/fa.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f5',
+                    onPressed: () => nota.play(AssetSource('nota/so.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f6',
+                    onPressed: () => nota.play(AssetSource('nota/la.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f7',
+                    onPressed: () => nota.play(AssetSource('nota/si.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f1',
+                    onPressed: () => nota.play(AssetSource('nota/do.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f2',
+                    onPressed: () => nota.play(AssetSource('nota/si.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f3',
+                    onPressed: () => nota.play(AssetSource('nota/la.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f4',
+                    onPressed: () => nota.play(AssetSource('nota/so.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f2',
+                    onPressed: () => nota.play(AssetSource('nota/fa.wav')),
+                  ),
+                  WhitePianoKey(
+                    text: 'f3',
+                    onPressed: () => nota.play(AssetSource('nota/mi.wav')),
+                  ),
                 ],
               ),
               BlackPianoKey(left: 35, text: 'f1'),

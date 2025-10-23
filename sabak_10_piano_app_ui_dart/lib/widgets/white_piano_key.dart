@@ -20,7 +20,7 @@ class WhitePianoKey extends StatelessWidget {
         minimumSize: Size(54, 217.93),
       ),
 
-      onPressed: () {},
+      onPressed: onPressed,
       child: Column(
         children: [
           SizedBox(height: 150),
