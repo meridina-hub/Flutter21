@@ -66,13 +66,13 @@ class PianoApp extends StatelessWidget {
                     text: 'f2',
                     onPressed: () => nota.play(AssetSource('nota/fa.wav')),
                   ),
-                  WhitePianoKey(
-                    text: 'f3',
-                    onPressed: () => nota.play(AssetSource('nota/mi.wav')),
-                  ),
                 ],
               ),
-              BlackPianoKey(left: 35, text: 'f1'),
+              BlackPianoKey(
+                left: 35,
+                text: 'f1',
+                onTap: () => nota.play(AssetSource('nota/fa.wav')),
+              ),
               BlackPianoKey(left: 90, text: 'f2'),
               BlackPianoKey(left: 200, text: 'f3'),
               BlackPianoKey(left: 255, text: 'f4'),
